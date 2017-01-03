@@ -15,14 +15,20 @@ This element is made for Hybrid mode so it should work with both Polymer 2.0 and
 ## Usage
 
 The simplest way is to just import the element and then use it.
-````
-<link rel="import" href="/bower_components/paper-calendar/paper-calendar.html">
-````
-...
-````
-<paper-calendar>
-````
-Check docs for more info
+<!--
+```
+<custom-element-demo>
+  <template>
+    <link rel="import" href="paper-pager.html">
+    <next-code-block></next-code-block>
+  </template>
+</custom-element-demo>
+```
+-->
+```
+<paper-calendar></paper-calendar>
+```
+Check docs for more info.
 
 ## Contributing
 
