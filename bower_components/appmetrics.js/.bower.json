@@ -1,0 +1,15 @@
+{
+  "name": "appmetrics.js",
+  "homepage": "https://github.com/ebidel/appmetrics.js",
+  "version": "0.0.6",
+  "_release": "0.0.6",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.6",
+    "commit": "06dd0150ce4d9e609c1181d4429214791dda421a"
+  },
+  "_source": "https://github.com/ebidel/appmetrics.js.git",
+  "_target": "^0.0.6",
+  "_originalSource": "ebidel/appmetrics.js",
+  "_direct": true
+}

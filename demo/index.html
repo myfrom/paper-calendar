@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>paper-calendar demo</title>
+
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../paper-calendar-perfmarks.html">
+
+    <style is="custom-style" include="demo-pages-shared-styles">
+    </style>
+  </head>
+  <body>
+    <div class="vertical-section-container centered">
+      <h3>Basic paper-calendar demo</h3>
+      <demo-snippet>
+        <template>
+          <paper-calendar selectable></paper-calendar>
+        </template>
+      </demo-snippet>
+    </div>
+    <div class="vertical-section-container centered">
+      <h3>Vertical scrolling paper-calendar with events</h3>
+      <demo-snippet>
+        <template>
+          <paper-calendar swipe-direction="vertical" id="foo"></paper-calendar>
+          <script>
+            const events = [
+              {
+                name: 'Your Timetrable release date',
+                color: '#673ab7',
+                date: Date.parse('Sep 1, 2017')
+              },
+              {
+                date: Date.parse('Aug 30, 2017')
+              },
+              // Using moment.js:
+              {
+                color: '#ff9800',
+                date: Number(moment().add(1,'d').format('x'))
+              },
+              {
+                name: 'Two days ago',
+                color: '#795548',
+                date: Number(moment().add(-2,'d').format('x'))
+              },
+              {
+                name: 'Two days ago (2)',
+                date: Number(moment().add(-2,'d').format('x'))
+              },
+            ];
+            document.querySelector('#foo').events = events;
+          </script>
+        </template>
+      </demo-snippet>
+    </div>
+    <div class="vertical-section-container centered">
+      <h3>Clear (without selected value and option to select) paper-calendar</h3>
+      <demo-snippet>
+        <template>
+          <paper-calendar selected="0" allow-text-selection></paper-calendar>
+        </template>
+      </demo-snippet>
+    </div>
+  </body>
+</html>

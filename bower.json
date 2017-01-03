@@ -1,0 +1,37 @@
+{
+  "name": "paper-calendar",
+  "version": "0.1.0",
+  "description": "A useful calendar widget that you can use in various situations",
+  "authors": [
+    "Witus13"
+  ],
+  "keywords": [
+    "web-components",
+    "polymer",
+    "paper",
+    "calendar"
+  ],
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Witus13/paper-calendar"
+  },
+  "license": "https://raw.githubusercontent.com/Witus13/paper-calendar/master/LICENSE",
+  "homepage": "https://github.com/Witus13/paper-calendar",
+  "ignore": [
+    "paper-calendar-perfmarks.html"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.7.0",
+    "moment": "^2.17.1",
+    "iron-resizable-behavior": "PolymerElements/iron-resizable-behavior#^1.0.5"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
+    "web-component-tester": "^4.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0",
+    "appmetrics.js": "ebidel/appmetrics.js#^0.0.6"
+  },
+  "main": "paper-calendar.html"
+}

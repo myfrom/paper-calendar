@@ -1,0 +1,47 @@
+{
+  "name": "appmetrics.js",
+  "description": "Record and report your web app's performance metrics to Google Analytics",
+  "version": "0.0.6",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "main": "./src/appmetrics.js",
+  "keywords": [
+    "metrics",
+    "analytics",
+    "reporting",
+    "measure",
+    "measurement",
+    "instrument"
+  ],
+  "scripts": {
+    "lint": "gulp lint",
+    "test": "./node_modules/mocha/bin/mocha",
+    "release": "npm version patch; gulp; npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ebidel/appmetrics.js"
+  },
+  "bugs": {
+    "url": "https://github.com/ebidel/appmetrics.js/issues"
+  },
+  "devDependencies": {
+    "babel-core": "^6.13.2",
+    "babel-preset-es2015": "^6.13.2",
+    "chai": "^3.5.0",
+    "del": "^2.2.1",
+    "eslint-config-google": "^0.6.0",
+    "gulp": "^3.9.1",
+    "gulp-closure-compiler": "^0.4.0",
+    "gulp-eslint": "^3.0.1",
+    "gulp-inject-version": "^1.0.1",
+    "gulp-license": "^1.1.0",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-mocha": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "mocha": "^3.0.1",
+    "run-sequence": "^1.2.2"
+  }
+}
