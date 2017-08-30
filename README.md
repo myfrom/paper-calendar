@@ -1,3 +1,6 @@
+:warning::construction: **ELEMENT IS DEPRECATED** :warning::construction:  
+Please use other elements instead such as [pf-calendar-events](https://www.webcomponents.org/element/PFElements/pf-calendar-events)
+
 [![Build Status](https://img.shields.io/travis/rust-lang/rust.svg?style=flat-square)](https://travis-ci.org/Witus13/paper-calendar)
 
 # paper-calendar
