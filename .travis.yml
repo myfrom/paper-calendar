@@ -10,13 +10,13 @@ addons:
     - google-chrome
     packages:
     - google-chrome-stable
-before_script:
-- npm install -g bower polylint web-component-tester
-- bower install
-- polylint
+install:
+- npm install -g polymer-cli
+- npm install
 script:
-- xvfb-run wct
-- if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then wct -s 'default'; fi
+- polymer test
+- xvfb-run polymer test
+- if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then polymer test -s 'default'; fi
 env:
   global:
   - secure: jlYWjDnowevILsKgtln5qsl8uZ9P4s0CT64xn25S+EoZyLrg44W5pJKYfrutHUlqXNrThbYDlRwBYI59PSZbCEfr2Rkm1K/RMRyRdCq8IZYFVJdKptK7weCyzzEAsp2G+oWjJuaefL9ZBwY9r38rwsvQo6Z+WunNzzpQBGI34JqDk6bsG3yGHmXlB5pidHlAPVLQO8+HtUj2PoHLTgVhYPOwUX1HClqk5RzvvKB2y5zKPzGyqt6RDX7tWLVyvOl7MDDrG1/QQRg3zqK4vBrE2Kq7bSG1R2uTCcrf93tT719Cf+ufPYwle5qMd1j/I0qvPNHNQwj0E6ViMWqJ5+VzMBxm4Lef2g+YxNloaiuCCZR8q7wbVCxXTf4hNEejrS/caTRH1UIL82U7X2i51yKSO9AXw4ywAx+G4IKDs09fZ38mhcrKqVmGldOWvFJyFhYcTfNZ0ViL+fw5x3vNo5Yw8dOcp7tak41xZppT80g0n5h5GKEt8sgpPPllr/HGrvsZ5cUBf9tMq0SczEIvMTxRUJ+WNe7oPnxxpVpkr6xzCfReXRBn/hzK1Rtq7xp0OJtgHRaHn1ShXcRdI4u0TQOoIbqSJAPrKV58dxc+8tktfpUOIQYVmcLTF4AEJbHldgs9OMrgQctFfeSTDYl1bmRwriH0VxxXBKP+nKjJDzV5g0U=
