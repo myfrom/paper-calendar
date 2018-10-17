@@ -1,18 +1,21 @@
 :warning::construction: **ELEMENT IS WORK IN PROGRESS** :warning::construction:  
-The element needs a lot of optimisation and polish to be done. I don't recommend using it in production just try
+The element needs a lot of optimisation and polish to be done. I don't recommend using it in production at its current stage
 
-[![Build Status](https://img.shields.io/travis/rust-lang/rust.svg?style=flat-square)](https://travis-ci.org/Witus13/paper-calendar)
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg?style=flat-square)](https://www.webcomponents.org/element/@myfrom/paper-calendar)
+[![Build Status](https://img.shields.io/travis/myfrom/paper-calendar.svg?style=flat-square)](https://travis-ci.org/myfrom/paper-calendar)
+[![npm](https://img.shields.io/npm/v/@myfrom/paper-calendar.svg?style=flat-square)](https://www.npmjs.com/package/@myfrom/paper-calendar)
 
 # paper-calendar
 
-A useful calendar widget that you can use in various situations.
+A useful calendar widget that you can use in various situations. Provides support for selecting dates, swiping between months and displaying events as dots below dates. All in Material Design style 🎨
 
 ## Installation
 
-Make sure you have installed Bower, then simply run  
-`$ bower install --save Witus13/paper-pager`
+Make sure you have installed NPM, then simply run  
+`$ npm install --save @myfrom/paper-calendar`
 
-This element is made for Hybrid mode so it should work with both Polymer 2.0 and 1.0 but it **hasn't been tested with 2.0 yet**
+Newer versions of this element work only with Polymer 3.  
+For backwards compatibility use versions 0.1
 
 ## Usage
 
@@ -21,7 +24,7 @@ The simplest way is to just import the element and then use it.
 ```
 <custom-element-demo>
   <template>
-    <link rel="import" href="paper-pager.html">
+    <script type="module" src="paper-calendar.js"></script>
     <next-code-block></next-code-block>
   </template>
 </custom-element-demo>
@@ -30,7 +33,7 @@ The simplest way is to just import the element and then use it.
 ```
 <paper-calendar></paper-calendar>
 ```
-Check docs for more info.
+Check docs for more info and examples
 
 ## Contributing
 
