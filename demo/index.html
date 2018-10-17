@@ -6,21 +6,27 @@
 
     <title>paper-calendar demo</title>
 
-    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
 
-    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
-    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
-    <link rel="import" href="../paper-calendar-perfmarks.html">
+    <script type="module">
+      import '@polymer/iron-demo-helpers/demo-pages-shared-styles';
+      import '@polymer/iron-demo-helpers/demo-snippet';
+    </script>
 
-    <style is="custom-style" include="demo-pages-shared-styles">
-    </style>
+    <script type="module" src="../paper-calendar.js"></script>
+    <script src="../node_modules/dayjs/dayjs.min.js" async></script>
+
+    <custom-style>
+      <style is="custom-style" include="demo-pages-shared-styles">
+      </style>
+    </custom-style>
   </head>
   <body>
     <div class="vertical-section-container centered">
       <h3>Basic paper-calendar demo</h3>
       <demo-snippet>
         <template>
-          <paper-calendar selectable></paper-calendar>
+          <paper-calendar selectable swipeable></paper-calendar>
         </template>
       </demo-snippet>
     </div>
@@ -28,30 +34,30 @@
       <h3>Vertical scrolling paper-calendar with events</h3>
       <demo-snippet>
         <template>
-          <paper-calendar swipe-direction="vertical" id="foo"></paper-calendar>
+          <paper-calendar swipeable swipe-direction="vertical" id="foo"></paper-calendar>
           <script>
             const events = [
               {
                 name: 'Your Timetrable release date',
                 color: '#673ab7',
-                date: Date.parse('Sep 1, 2017')
+                date: Date.parse('Oct 13, 2018')
               },
               {
-                date: Date.parse('Aug 30, 2017')
+                date: Date.parse('Sep 30, 2018')
               },
-              // Using moment.js:
+              // Using Dayjs:
               {
                 color: '#ff9800',
-                date: Number(moment().add(1,'d').format('x'))
+                date: dayjs().add('d', 1).valueOf()
               },
               {
                 name: 'Two days ago',
                 color: '#795548',
-                date: Number(moment().add(-2,'d').format('x'))
+                date: dayjs().add('d', -2).valueOf()
               },
               {
                 name: 'Two days ago (2)',
-                date: Number(moment().add(-2,'d').format('x'))
+                date: dayjs().add('d', -2).valueOf()
               },
             ];
             document.querySelector('#foo').events = events;
