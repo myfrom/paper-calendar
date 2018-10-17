@@ -48,16 +48,16 @@
               // Using Dayjs:
               {
                 color: '#ff9800',
-                date: dayjs().add('d', 1).valueOf()
+                date: dayjs().add(1, 'day').valueOf()
               },
               {
                 name: 'Two days ago',
                 color: '#795548',
-                date: dayjs().add('d', -2).valueOf()
+                date: dayjs().add(-2, 'day').valueOf()
               },
               {
                 name: 'Two days ago (2)',
-                date: dayjs().add('d', -2).valueOf()
+                date: dayjs().add(-2, 'day').valueOf()
               },
             ];
             document.querySelector('#foo').events = events;
