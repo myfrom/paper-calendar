@@ -1,6 +1,6 @@
 {
   "name": "@myfrom/paper-calendar",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "An useful MD calendar widget that you can use in various situations",
   "main": "paper-calendar.js",
   "directories": {
