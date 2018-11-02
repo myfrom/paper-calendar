@@ -3,7 +3,7 @@ import { html } from '@polymer/polymer/lib/utils/html-tag.js';
 
 import { IronResizableBehavior } from '@polymer/iron-resizable-behavior';
 
-// import dayjs from 'dayjs';
+import dayjs from 'dayjs';
 
 /**
  * `paper-calendar`
